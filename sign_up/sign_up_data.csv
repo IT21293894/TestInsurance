@@ -1,0 +1,16 @@
+Test Case ID,Enabled,Description,firstName,surName,phone,type,street,city,country,postCode,email,password,confirmPassword
+sign_up,0,All the fields are empty,,,,,,,,,,,
+sign_up,0,All the fields are empty except the firstname,Samantha,,,,,,,,,,
+sign_up,0,Empty firstname and valid information for all the other fields,,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Phone number with letters,Samantha,Perera,71155bbbbb,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Phone number with symbols,Samantha,Perera,715623####,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Post code in invalid format,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Post code with letters,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41bbb,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Post code with symbols,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41###,Samantha@gmail.com,Samantha*123,Samantha*123
+sign_up,0,Email in invalid format,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha.gamil.com,Samantha*123,Samantha*123
+sign_up,0,Alredy registered email,Nihal,De Silva,117894562,Full,Isurupura,Malabe,Sri Lanka,78945,Samantha@gmail.com,Nihal*123,Nihal*123
+sign_up,0,Alredy registered firstname and surname,Nihal,De Silva,7894561230,Full,Isurupura,Malabe,Sri Lanka,77899,nihal@gmail.com,Nihal*124,Nihal*124
+sign_up,0,Password in less than 8 bits,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,samntha,samantha
+sign_up,0,Invalid date for Date Of Birth field,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,samntha,samantha
+sign_up,0,Mismatch password for password and confirm password fields,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,Samantha*123,Perera*123
+sign_up,1,Valid information for all the fields,Samantha,Perera,715566789,Full,Isurupura,Malabe,Sri Lanka,41148,Samantha@gmail.com,Samantha*123,Samantha*123
